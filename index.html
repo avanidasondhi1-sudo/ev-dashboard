@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EV Market Intelligence Dashboard</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="css/style.css"></head><body><div class="wrap">
+<h1>EV market intelligence</h1>
+<p class="sub">Sales, battery technology, range, ratings and manufacturing footprint across vehicle categories. Pick a view for your role, then filter by category or battery.</p>
+<div class="bar tabs" id="tabs" role="group" aria-label="Views">
+<button data-v="ov" aria-pressed="true">Strategy overview</button>
+<button data-v="co" aria-pressed="false">Competition</button>
+<button data-v="te" aria-pressed="false">Technology research</button></div>
+<div class="bar"><label>Category <select id="fc"></select></label><label>Battery <select id="fb"></select></label><button id="rs" style="font:inherit;padding:7px 12px;border-radius:8px;border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer">Reset filters</button></div>
+<div class="persona" id="persona"></div>
+<div class="kpis" id="kpis"></div>
+<div class="grid" id="grid"></div>
+<div class="card" style="margin-top:14px"><h2>Model data</h2><p class="t">Select a column heading to sort.</p><div class="scroll" id="tbl"></div></div>
+<p class="note">Sample data: figures are illustrative, built to demonstrate the dashboard. Replace the DATA array with your own dataset to analyse real numbers. Sales are in thousands of units per year; range is in km.</p>
+</div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script></body></html>
